@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.ashik619.edgetensortest.MainActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/detectBtn"
+        android:text="Detect Faces"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="@drawable/buton_bg"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectLayout"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Camera"
+            android:textColor="#000"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Back Camera"
+                android:id="@+id/backCam"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:background="@drawable/buton_bg"
+                android:backgroundTint="@color/colorPrimary"/>
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:id="@+id/frontCam"
+                android:text="Front Camera"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:background="@drawable/buton_bg"
+                android:backgroundTint="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
